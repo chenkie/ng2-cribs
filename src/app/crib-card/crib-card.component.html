@@ -3,9 +3,19 @@
 
   <div class="caption">
     <div *ngIf="!crib.showDetails">
-      <h4><span class="label label-primary">{{ crib.type }}</span></h4>
-      <h3><i class="glyphicon glyphicon-tag"></i> {{ crib.price | currency:'USD':true }}</h3>
-      <h4><i class="glyphicon glyphicon-home"></i> {{ crib.address }}</h4>
+      <h4>
+        <span class="label label-primary">
+          {{ crib.type }}
+        </span>
+      </h4>
+      <h3>
+        <i class="glyphicon glyphicon-tag"></i> 
+          {{ crib.price | currency:'USD':true }}
+      </h3>
+      <h4>
+        <i class="glyphicon glyphicon-home"></i> 
+          {{ crib.address }}
+      </h4>
 
       <hr>
 
@@ -21,9 +31,15 @@
     <div *ngIf="crib.showDetails">
       <div class="details">
         <h4>
-          <span class="label label-primary">Beds: {{ crib.bedrooms }}</span>
-          <span class="label label-primary">Baths: {{ crib.bathrooms }}</span>
-          <span class="label label-primary">SqFt: {{ crib.area }}</span>
+          <span class="label label-primary">
+            Beds: {{ crib.bedrooms }}
+          </span>
+          <span class="label label-primary">
+            Baths: {{ crib.bathrooms }}
+          </span>
+          <span class="label label-primary">
+            SqFt: {{ crib.area }}
+          </span>
         </h4>
 
         <p>{{ crib.description }}</p>

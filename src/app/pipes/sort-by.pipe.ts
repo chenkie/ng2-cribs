@@ -12,8 +12,6 @@ export class SortByPipe implements PipeTransform {
       let sortField = args[0]; // the field we want to sort by
       let sortDirection = args[1];
 
-      console.log(sortDirection)
-
       let modifier = 1;
 
       if (sortDirection == "desc") {

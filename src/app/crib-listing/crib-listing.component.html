@@ -4,8 +4,16 @@
       <div class="panel-body">
         <div class="col-sm-4">
           <label for="sort-field">Sort By</label>
-          <select class="form-control" name="sort-field" id="sort-field" [(ngModel)]="sortField">
-            <option *ngFor="let field of sortFields" [value]="field">{{ utilService.capitalize(field) }}</option>
+          <select 
+            class="form-control" 
+            name="sort-field" 
+            id="sort-field" 
+            [(ngModel)]="sortField">
+            <option 
+              *ngFor="let field of sortFields" 
+              [value]="field">
+                {{ utilService.capitalize(field) }}
+              </option>
           </select>
         </div>
         <div class="col-sm-4">
