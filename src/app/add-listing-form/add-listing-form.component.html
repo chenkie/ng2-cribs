@@ -8,34 +8,34 @@
     <form #newCribForm="ngForm" (ngSubmit)="onCribSubmit(newCribForm.value)">
       <div class="form-group col-sm-4">
         <label for="address" class="">Address</label>
-        <input 
-          type="text" 
-          class="form-control" 
-          placeholder="Address" 
-          name="address" 
-          ngModel 
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Address"
+          name="address"
+          ngModel
           required>
       </div>
       <div class="form-group col-sm-4">
         <label for="price" class="">Price</label>
-        <input 
-          type="text" 
-          class="form-control" 
-          placeholder="Price" 
-          name="price" 
-          ngModel 
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Price"
+          name="price"
+          ngModel
           required>
       </div>
       <div class="form-group col-sm-4">
         <label for="property-type" class="">Property Type</label>
-        <select 
-          name="type" 
-          id="property-type" 
-          class="form-control" 
-          ngModel 
+        <select
+          name="type"
+          id="property-type"
+          class="form-control"
+          ngModel
           required>
-          <option 
-            *ngFor="let type of propertyTypes" 
+          <option
+            *ngFor="let type of propertyTypes"
             [value]="type">
               {{ utilService.capitalize(type) }}
           </option>
@@ -43,49 +43,49 @@
       </div>
       <div class="form-group col-sm-6">
         <label for="description" class="">Desciption</label>
-        <textarea 
-          type="text" 
-          class="form-control" 
-          placeholder="Description" 
-          name="description" 
-          ngModel 
+        <textarea
+          type="text"
+          class="form-control"
+          placeholder="Description"
+          name="description"
+          ngModel
           required>
         </textarea>
       </div>
       <div class="form-group col-sm-2">
         <label for="beds" class="">Beds</label>
-        <input 
-          type="text" 
-          class="form-control" 
-          placeholder="Beds" 
-          name="bedrooms" 
-          ngModel 
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Beds"
+          name="bedrooms"
+          ngModel
           required>
       </div>
       <div class="form-group col-sm-2">
         <label for="baths" class="">Baths</label>
-        <input 
-          type="text" 
-          class="form-control" 
-          placeholder="Baths" 
-          name="bathrooms" 
-          ngModel 
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Baths"
+          name="bathrooms"
+          ngModel
           required>
       </div>
       <div class="form-group col-sm-2">
         <label for="sqft" class="">SqFt</label>
-        <input 
-          type="text" 
-          class="form-control" 
-          placeholder="SqFt" 
-          name="area" 
-          ngModel 
+        <input
+          type="text"
+          class="form-control"
+          placeholder="SqFt"
+          name="area"
+          ngModel
           required>
       </div>
       <div class="form-group col-sm-12">
-        <button 
-          class="btn btn-primary listing-button" 
-          type="submit" 
+        <button
+          class="btn btn-primary listing-button"
+          type="submit"
           ng-show="addListing">
             Add
         </button>

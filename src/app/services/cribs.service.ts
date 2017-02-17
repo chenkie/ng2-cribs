@@ -1,11 +1,12 @@
-import { Injectable, Output, EventEmitter } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class CribsService {
 
-  @Output() cribAdded: EventEmitter<any> = new EventEmitter();
+  public newCribSubject = new Subject<any>();
 
   constructor(private http: Http) { }
 
@@ -15,7 +16,7 @@ export class CribsService {
 
   addCrib(data) {
     data.image = 'default-crib';
-    this.cribAdded.emit(data);
+    this.newCribSubject.next(data);
   }
 
 }

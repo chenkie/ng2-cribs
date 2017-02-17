@@ -11,6 +11,6 @@ export class CribCardComponent {
 
   @Input('crib') crib: Crib;
 
-  constructor() { }
+  constructor() {}
 
 }
