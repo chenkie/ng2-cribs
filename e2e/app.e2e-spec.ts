@@ -1,10 +1,10 @@
-import { Ng2CribsPage } from './app.po';
+import { Cribs.TestPage } from './app.po';
 
-describe('ng2-cribs App', function() {
-  let page: Ng2CribsPage;
+describe('cribs.test App', () => {
+  let page: Cribs.TestPage;
 
   beforeEach(() => {
-    page = new Ng2CribsPage();
+    page = new Cribs.TestPage();
   });
 
   it('should display message saying app works', () => {

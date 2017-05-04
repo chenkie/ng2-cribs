@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class Ng2CribsPage {
+export class Cribs.TestPage {
   navigateTo() {
     return browser.get('/');
   }
